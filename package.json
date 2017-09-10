@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/fmotorny/myproject/issues"
   },
-  "homepage": "https://github.com/fmotorny/myproject#readme"
+  "homepage": "https://github.com/fmotorny/myproject#readme",
+  "dependencies": {
+    "webpack": "^3.5.6"
+  }
 }
