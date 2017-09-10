@@ -1,0 +1,19 @@
+{
+  "name": "myproject",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fmotorny/myproject.git"
+  },
+  "author": "Fedja",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fmotorny/myproject/issues"
+  },
+  "homepage": "https://github.com/fmotorny/myproject#readme"
+}
