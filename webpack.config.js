@@ -1,9 +1,24 @@
-const path = require('path'); //webpack.github.io
+const path = require('path');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
-    entry: './src/main.js',
-    output: { // output отвечает за выходной файл, в данном случаи это bundle.js
-        path: path.resolve(__dirname, "dist"),
+    entry: './src/app.js',
+    output: {
+        path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js'
-    }
-}
+    },
+    module: {
+        rules: [
+          {
+            test: /\.sass$/,
+            use: ExtractTextPlugin.extract({
+              fallback: 'style-loader',
+              use: ['css-loader', 'sass-loader']
+            })
+          }
+        ]
+    },
+    plugins: [
+        new ExtractTextPlugin('bundle.css')
+    ]
+};
